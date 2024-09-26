@@ -1,0 +1,19 @@
+.Footer {
+    display: flex;
+    background-color: black;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.Footer img{
+    height: 4.5vh;
+    width: 6.5vw;
+    padding-top: 66px;
+}
+.Footer p{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+}
