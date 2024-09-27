@@ -8,12 +8,13 @@
     width: 11vw;
 }
 .banner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 100px;
-    background-color: #fff;
-  }
+  display: flex;
+  align-items: center;
+  padding: 10px 140px;
+  background-color: #fff;
+  align-content: center;
+  justify-content: space-between;
+}
 .banner ul {
     display: flex;
     justify-content: space-between;

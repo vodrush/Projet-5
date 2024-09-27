@@ -57,6 +57,13 @@
 .accueil{
     text-decoration: underline !important;
 }
+.t {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 /* Smartphones (portrait and landscape) */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 
@@ -72,17 +79,16 @@
     .p1 {
         font-size: 24px;
         top: 40%; 
-        left: 33%; 
+        left: 37%; 
 
     }
     .p2 {
         font-size: 24px;
         top: 60%; 
-        left: 41.5%; 
+        left: 56%; 
 
     }
 
-      
       
       
   }

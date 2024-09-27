@@ -1,0 +1,46 @@
+.fond2 {
+    border-radius: 25px;
+    mix-blend-mode: darken;
+    width: 80vw;
+    height: 12vw;
+    object-fit: cover;
+    position: relative; 
+}
+
+.bod2 {
+    display: flex;
+    justify-content: center;
+    position: relative; 
+}
+.accordionbouton{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+}
+.accordion {
+    background-color: #FF6060;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    padding: 10px 20px 10px 15px;
+    gap: 0px;
+    border-radius: 5px 0px 0px 0px;
+    width: 70vw;
+    height: 6vh;
+
+  }
+  
+  
+
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
