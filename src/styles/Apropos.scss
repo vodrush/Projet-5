@@ -1,46 +1,113 @@
-.fond2 {
-    border-radius: 25px;
-    mix-blend-mode: darken;
-    width: 80vw;
-    height: 12vw;
-    object-fit: cover;
-    position: relative; 
-}
+.apropos-page {
+    .fond2 {
+        border-radius: 25px;
+        mix-blend-mode: darken;
+        width: 80vw;
+        height: 12vw;
+        object-fit: cover;
+        position: relative;
+    }
 
-.bod2 {
-    display: flex;
-    justify-content: center;
-    position: relative; 
-}
-.accordionbouton{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5vh;
-}
-.accordion {
-    background-color: #FF6060;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    padding: 10px 20px 10px 15px;
-    gap: 0px;
-    border-radius: 5px 0px 0px 0px;
-    width: 70vw;
-    height: 6vh;
+    .bod2 {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
 
-  }
-  
-  
+    .accordionbouton {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1vh;
+        flex-direction: column;
+        width: 100%;
+    }
 
-  .panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-  }
+    .accordion {
+        background-color: #FF6060;
+        color: white;
+        cursor: default;
+        padding: 18px;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        padding: 10px 20px 10px 15px;
+        border-radius: 5px;
+        width: 65vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .accordion:hover {
+        background-color: #ff5050;
+    }
+
+    .accordion-text {
+        flex-grow: 1;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        cursor: default;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .accordion-icon {
+        transition: transform 0.4s ease;
+        position: relative;
+        right: 0px;
+        transform: rotate(180deg);
+        cursor: pointer;
+    }
+
+    .accordion-icon.open {
+        transform: rotate(0deg);
+    }
+
+    .panel {
+        padding: 0 20px;
+        background-color: #FBFBFB;
+        overflow: hidden;
+        transition: height 0.4s ease;
+        border-radius: 0px 0px 5px 5px;
+    }
+
+    .panel.open {
+        padding: 15px 20px;
+        background-color: #E5E5E5;
+        width: 65vw;
+        height: auto;
+    }
+
+    .panel p {
+        margin: 0;
+        color: #333;
+        line-height: 1.5;
+    }
+
+    .accueil {
+        text-decoration: none;
+        color: black;
+    }
+
+
+
+    .apropos {
+        text-decoration: underline !important;
+    }
+
+    .Footer {
+        margin-top: 3vh;
+    }
+
+    .Accordiongroup {
+        padding-top: 4vh;
+        padding-bottom: 3.3vh;
+    }
+}
