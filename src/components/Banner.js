@@ -8,7 +8,7 @@ function Banner() {
 
   return (
     <div className="banner">
-      <img src={logo} alt="Logo" />
+      <img src={logo} alt="Logo" a href />
       <nav>
         <ul>
           <li>

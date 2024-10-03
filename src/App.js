@@ -4,6 +4,7 @@ import Apropos from './components/Apropos';
 import Banner from './components/Banner'
 import Footer from './components/Footer';
 import E404 from './components/E404';
+import LogementDetail from './components/LogementDetail';
 import './styles/App.scss';
 
 function App() {
@@ -11,11 +12,11 @@ function App() {
     <Router>
       <Banner /> 
       <Routes>
-        {/* Rediriger "/" vers "/home" */}
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />
         <Route path="/a-propos" element={<Apropos />} />
         <Route path="*" element={<E404 />} />
+        <Route path="/logement/:id" element={<LogementDetail />} />
       </Routes>
       <Footer />
     </Router>
