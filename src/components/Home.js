@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Banner from './Banner'; 
 import Footer from './Footer';
@@ -7,18 +8,21 @@ import Fond from '../assets/fond1.png';
 
 function Home() {
   return (
-    <div className="home-page"> 
+    <div className="home-page">
       <div className="t">
-        <div className="bod">
-          <img className="fond" src={Fond} alt="Logo" />
+        <img className="fond" src={Fond} alt="Logo" />
           <div className="overlay"></div>
-          <p className="p1">Chez vous, </p>
-          <p className="p2">partout et ailleurs</p>
+        <div className="banner-text">
+          <p className="p1 desktop-text">Chez vous, partout et ailleurs</p>
+          <p className="p1 mobile-text">Chez vous,</p>
+          <p className="p2 mobile-text">partout et ailleurs</p>
         </div>
-        <Gallery />
       </div>
     </div>
   );
 }
+
+
+
 
 export default Home;

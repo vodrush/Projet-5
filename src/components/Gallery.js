@@ -14,12 +14,12 @@ function Gallery() {
     <div className="fondgallery">
       <div className="gallery">
         {logements.map((logement) => (
-          <Link to={`/logement/${logement.id}`} key={logement.id}> 
-            <div className="card">
+          <div className="card" key={logement.id}>
+            <Link to={`/logement/${logement.id}`}> 
               <img src={logement.cover} alt={logement.title} />
-              <h3>{logement.title}</h3>
-            </div>
-          </Link>
+            </Link>
+            <h3 className="titre-logement">{logement.title}</h3>
+          </div>
         ))}
       </div>
     </div>

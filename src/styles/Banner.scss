@@ -2,18 +2,17 @@
 .banner{
     margin: 2vw;
     padding-left: 2vw;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    padding: 10px 140px;
+    background-color: #fff;
+    align-content: center;
+    justify-content: space-between;
 }
 .banner img {
     height: 7vh;
     width: 11vw;
-}
-.banner {
-  display: flex;
-  align-items: center;
-  padding: 10px 140px;
-  background-color: #fff;
-  align-content: center;
-  justify-content: space-between;
 }
 .banner ul {
     display: flex;
@@ -45,12 +44,36 @@
   }
   
   .active {
-    text-decoration: underline !important; // Le lien actif sera souligné
+    text-decoration: underline !important;
     font-weight: bold;
   }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .banner{
+      width: 90vw;
+      padding: 10px 0px;
+    }
+    .banner ul{
+      width: 40vw;
+      padding-left: 20px;
+    }
+    .banner img {
+      height: 6vh;
+      width: 47vw;
+      object-fit: contain; 
+    }
+    .banner ul li a {
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 500;
+      text-align: right;
+      width: 55px;
+      height: 17px;
+      padding: 0;
+    }
+    .apropos{
+      width: 1vw;
+    }
   
   
   
-  
-  
-  
+  }

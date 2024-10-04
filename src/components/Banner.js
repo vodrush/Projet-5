@@ -1,14 +1,14 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom'; // Utilisation de Link et useLocation
+import { Link, useLocation } from 'react-router-dom'; 
 import logo from '../assets/logokosa.PNG'; 
 import '../styles/Banner.scss'; 
 
 function Banner() {
-  const location = useLocation(); // Utilisation de useLocation pour obtenir l'URL actuelle
+  const location = useLocation(); 
 
   return (
     <div className="banner">
-      <img src={logo} alt="Logo" a href />
+      <img class="logo" src={logo} alt="Logo" a href />
       <nav>
         <ul>
           <li>
@@ -26,7 +26,7 @@ function Banner() {
               className={`apropos ${location.pathname === '/a-propos' ? 'active' : ''}`} 
               to="/a-propos"
             >
-              À Propos
+              A Propos
             </Link>
           </li>
         </ul>
