@@ -14,9 +14,10 @@ function Home() {
           <div className="overlay"></div>
         <div className="banner-text">
           <p className="p1 desktop-text">Chez vous, partout et ailleurs</p>
-          <p className="p1 mobile-text">Chez vous,</p>
-          <p className="p2 mobile-text">partout et ailleurs</p>
+          <p className="p1mobile-text">Chez vous,</p>
+          <p className="p2mobile-text">partout et ailleurs</p>
         </div>
+        <Gallery />
       </div>
     </div>
   );

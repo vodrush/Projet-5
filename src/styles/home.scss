@@ -11,6 +11,7 @@
         top: 17.5vh;
         bottom: 61.5vh;
         width: 80vw;
+        height: 10vw;
         background-color: rgba(0, 0, 0, 0.5);
         border-radius: 25px;
         z-index: 1;
@@ -22,7 +23,7 @@
         align-content: center;
         align-items: center;
     }
-    .desktop-text, .mobile-text {
+    .desktop-text, .p1mobile-text, .p2mobile-text {
         position: absolute;
         z-index: 2; 
         transform: translate(-50%, -50%);
@@ -64,6 +65,7 @@
     .fond{
         height: 30vw;
         width: 90vw;
+        border-radius: 10px;
     }
     .overlay{
         position: absolute;
@@ -71,6 +73,33 @@
         bottom: 61.5vh;
         height: 30vw;
         width: 90vw;
+        border-radius: 10px;
+    }
+    .desktop-text {
+        display: none;
+    }
+    .mobile-text {
+        display: block;
+    }
+    .mobile-text {
+        display: block;
+    }
+    .p1mobile-text{
+        top: 13vh;
+        left: 26vw;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .p2mobile-text{
+        top: 16vh;
+        left: 38vw;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .fondgallery {
+        margin-top: 0vh;
+        background: white;
+        box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
     }
   
       

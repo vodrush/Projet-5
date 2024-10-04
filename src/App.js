@@ -18,6 +18,7 @@ function App() {
         <Route path="*" element={<E404 />} />
         <Route path="/logement/:id" element={<LogementDetail />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

@@ -52,6 +52,9 @@
   .href{
     text-decoration: none;
   }
+  @media only screen and (max-width: 480px) {
+    .gallery{
+      width: 99vw;
+    }
 
-
-  
+  }

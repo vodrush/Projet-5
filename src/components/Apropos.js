@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Banner from './Banner'; 
 import Footer from './Footer';
-import '../styles/Apropos.scss'; // Import du fichier SCSS spécifique à cette page
+import '../styles/Apropos.scss'; 
 import Fond2 from '../assets/fond2.png';
 
 function Apropos() {
