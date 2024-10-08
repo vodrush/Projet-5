@@ -22,11 +22,11 @@ Le but de ce projet est de développer une application web complète permettant 
 ### Étapes
 1. Clonez le dépôt :
    ```bash
-   git clone https://github.com/votre-utilisateur/projet5-kasa.git
+   git clone https://github.com/vodrush/projet5.git
    ```
 2. Naviguez dans le répertoire du projet :
    ```bash
-   cd projet5-kasa
+   cd projet5
    ```
 
 3. Installez les dépendances :
