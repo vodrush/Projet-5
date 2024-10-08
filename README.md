@@ -49,5 +49,5 @@ Accessibilité : Utilisation des attributs ARIA et des bonnes pratiques pour ren
 
 Responsive Design : L'application est adaptée à différents formats d'écrans (mobile, tablette, bureau).
 
-Auteurs
-Vodrush - Développeur Web
+## Auteur
+**Vodrush - Développeur Web**
