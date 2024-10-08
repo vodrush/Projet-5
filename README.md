@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Projet 5 - Kasa : Plateforme de location d'appartements
+Bienvenue dans le **Projet 5** de ma formation de développeur web. Ce projet consiste à créer une plateforme de location d'appartements, appelée **Kasa**, en mettant l'accent sur la fiabilité, la sécurité, et l'accessibilité.
+## Table des matières
+- [Description](#description)
+- [Technologies utilisées](#technologies-utilisées)
+- [Installation](#installation)
+- [Fonctionnalités](#fonctionnalités)
+- [Contribuer](#contribuer)
+- [Auteurs](#auteurs)
+- [Licence](#licence)
+## Description
+Le but de ce projet est de développer une application web complète permettant aux utilisateurs de consulter des annonces de locations et de naviguer dans des logements via une interface fluide et responsive. Le projet met également en œuvre des pratiques d'accessibilité et de performance pour assurer une expérience utilisateur optimale.
+## Technologies utilisées
+- **React** : pour la création de l'interface utilisateur.
+- **Sass** : pour la gestion du style et des feuilles de style modulaires.
+- **JavaScript ES6** : pour la gestion de la logique applicative.
+- **HTML5/CSS3** : pour les structures de base et la présentation.
+## Installation
+### Prérequis
+- **Node.js** : Assurez-vous d'avoir installé [Node.js](https://nodejs.org) sur votre machine.
+- **Git** : pour cloner le projet.
+### Étapes
+1. Clonez le dépôt :
+   ```bash
+   git clone https://github.com/votre-utilisateur/projet5-kasa.git
+   ```
+2. Naviguez dans le répertoire du projet :
+   ```bash
+   cd projet5-kasa
+   ```
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+3. Installez les dépendances :
+   ```bash
+   npm install
+   ```
 
-## Available Scripts
+4. Lancez l'application en mode développement :
+   ```bash
+   npm start
+   ```
+L'application sera disponible à l'adresse http://localhost:3000.
 
-In the project directory, you can run:
+Fonctionnalités
+Affichage des logements : Les utilisateurs peuvent consulter les logements disponibles avec des détails tels que le titre, les notes, et les équipements.
+Système de navigation : Une navigation fluide entre les pages, avec gestion des erreurs 404.
+Accessibilité : Utilisation des attributs ARIA et des bonnes pratiques pour rendre l'application accessible aux utilisateurs de technologies d'assistance.
+Responsive Design : L'application est adaptée à différents formats d'écrans (mobile, tablette, bureau).
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Auteurs
+Vodrush - Développeur Web
