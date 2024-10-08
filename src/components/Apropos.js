@@ -5,14 +5,17 @@ import '../styles/Apropos.scss';
 import Fond2 from '../assets/fond2.png';
 
 function Apropos() {
+  // État pour gérer l'ouverture/fermeture des accordéons
   const [openAccordions, setOpenAccordions] = useState([false, false, false, false]);
 
+  // Fonction pour basculer l'état d'un accordéon particulier
   const toggleAccordion = (index) => {
     const newOpenAccordions = [...openAccordions];
     newOpenAccordions[index] = !newOpenAccordions[index];
     setOpenAccordions(newOpenAccordions);
   };
 
+  // Données des accordéons (peuvent être externalisées)
   const accordionsData = [
     { title: "Fiabilité", content: "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes." },
     { title: "Respect", content: "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme." },
@@ -21,31 +24,33 @@ function Apropos() {
   ];
 
   return (
-    <div className="apropos-page"> {/* Classe parent spécifique pour la page À Propos */}
-      <div>
-        <div className="bod2">
-          <img className="fond2" src={Fond2} alt="Fond" />
-        </div>
-        <div className="Accordiongroup">
-          {accordionsData.map((accordion, index) => (
-            <AccordionItem 
-              key={index} 
-              title={accordion.title} 
-              content={accordion.content} 
-              isOpen={openAccordions[index]} 
-              toggle={() => toggleAccordion(index)} 
-            />
-          ))}
-        </div>
+    <div className="apropos-page">
+      <div className="bod2">
+        <img className="fond2" src={Fond2} alt="Fond illustrant la page À Propos" />
       </div>
+
+      <div className="Accordiongroup">
+        {accordionsData.map((accordion, index) => (
+          <AccordionItem 
+            key={index} 
+            title={accordion.title} 
+            content={accordion.content} 
+            isOpen={openAccordions[index]} 
+            toggle={() => toggleAccordion(index)} 
+          />
+        ))}
+      </div>
+
     </div>
   );
 }
 
+// Composant pour un seul élément d'accordéon
 function AccordionItem({ title, content, isOpen, toggle }) {
   const contentRef = useRef(null);
   const [contentHeight, setContentHeight] = useState("0px");
 
+  // Mise à jour de la hauteur du contenu en fonction de l'état d'ouverture/fermeture
   useEffect(() => {
     if (contentRef.current) {
       setContentHeight(isOpen ? `${contentRef.current.scrollHeight}px` : "0px");
@@ -54,39 +59,32 @@ function AccordionItem({ title, content, isOpen, toggle }) {
 
   return (
     <div className="accordionbouton">
-      <div className="accordion">
+      <div className="accordion" onClick={toggle} role="button" aria-expanded={isOpen}>
         <span className="accordion-text">{title}</span>
         <svg
-          onClick={toggle}
           className={`accordion-icon ${isOpen ? 'open' : ''}`}
           fill="#ffffff"
           height="24px"
           width="24px"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlnsXlink="http://www.w3.org/1999/xlink"
           viewBox="0 0 330 330"
-          xmlSpace="preserve"
-          stroke="#ffffff"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-          <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
-          <g id="SVGRepo_iconCarrier">
-            <path
-              id="XMLID_225_"
-              d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
-                c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
-                s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
-            />
-          </g>
+          <path
+            d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+              c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+              s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
+          />
         </svg>
       </div>
+
+      {/* Contenu de l'accordéon */}
       <div
         className={`panel ${isOpen ? 'open' : ''}`}
         ref={contentRef}
         style={{
           maxHeight: contentHeight,
         }}
+        aria-hidden={!isOpen}
       >
         <p>{content}</p>
       </div>

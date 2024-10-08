@@ -13,7 +13,7 @@
     width: 6.5vw;
     padding-top: 66px;
 }
-.Footer p{
+.Footer h2{
     color: white;
     font-size: 24px;
     font-weight: 500;
@@ -30,7 +30,21 @@
         display: none;
     }
     .p1mobile-text, .p2mobile-text {
-        display: block;
+        display: flex;
+        font-weight: 400 !important;
     }
-
+    .Footer img{
+        height: 5vh;
+        width: 30.5vw;
+        padding-top: 66px;
+    }
+    .p2mobile-text{
+        margin-top: 0;
+    }
+    .p1mobile-text{
+        margin-bottom: 0;
+    }
+    .Footer{
+        width: 100vw;
+    }
 }

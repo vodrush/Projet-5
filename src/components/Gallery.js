@@ -11,14 +11,16 @@ function Gallery() {
   }, []);
 
   return (
-    <div className="fondgallery">
+    <div className="fondgallery" aria-label="Galerie de logements disponibles">
       <div className="gallery">
         {logements.map((logement) => (
-          <div className="card" key={logement.id}>
-            <Link to={`/logement/${logement.id}`}> 
-              <img src={logement.cover} alt={logement.title} />
+          <div className="card" key={logement.id} role="article" aria-labelledby={`logement-title-${logement.id}`}>
+            <Link to={`/logement/${logement.id}`} aria-label={`Voir les détails du logement ${logement.title}`}>
+              <img src={logement.cover} alt={`Image de couverture du logement ${logement.title}`} />
             </Link>
-            <h3 className="titre-logement">{logement.title}</h3>
+            <h3 className="titre-logement" id={`logement-title-${logement.id}`}>
+              {logement.title}
+            </h3>
           </div>
         ))}
       </div>

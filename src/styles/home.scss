@@ -8,8 +8,7 @@
     }
     .overlay {
         position: absolute;
-        top: 17.5vh;
-        bottom: 61.5vh;
+        bottom: 61vh;
         width: 80vw;
         height: 10vw;
         background-color: rgba(0, 0, 0, 0.5);
@@ -28,11 +27,12 @@
         z-index: 2; 
         transform: translate(-50%, -50%);
         color: white;
+        background-color: rgba(0, 0, 0, 0.021);
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         font-family: 'Montserrat', sans-serif;
     }
     .desktop-text {
-        top: 23vh;
+        top: 25vh;
         font-size: 48px;
         font-weight: 700;
     }
@@ -69,8 +69,7 @@
     }
     .overlay{
         position: absolute;
-        top: 10.2vh;
-        bottom: 61.5vh;
+        top: 10.8vh;
         height: 30vw;
         width: 90vw;
         border-radius: 10px;
@@ -91,8 +90,8 @@
         font-weight: 700;
     }
     .p2mobile-text{
-        top: 16vh;
-        left: 38vw;
+        top: 19vh;
+        left: 36vw;
         font-size: 24px;
         font-weight: 700;
     }

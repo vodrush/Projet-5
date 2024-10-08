@@ -7,31 +7,35 @@ function Banner() {
   const location = useLocation(); 
 
   return (
-    <div className="banner">
-      <img class="logo" src={logo} alt="Logo" a href />
-      <nav>
+    <header className="banner" role="banner">
+      <Link to="/home" aria-label="Retour à l'accueil">
+        <img className="logo" src={logo} alt="Logo Kosa" />
+      </Link>
+      <nav aria-label="Navigation principale">
         <ul>
           <li>
-            {/* Applique la classe active uniquement si la route est exactement "/home" */}
+            {/* Applique la classe active uniquement si la route est "/home" */}
             <Link 
               className={`accueil ${location.pathname === '/home' ? 'active' : ''}`} 
-              to="/home"
+              to="/home" 
+              aria-current={location.pathname === '/home' ? 'page' : undefined}
             >
               Accueil
             </Link>
           </li>
           <li>
-            {/* Applique la classe active uniquement si la route est exactement "/a-propos" */}
+            {/* Applique la classe active uniquement si la route est "/a-propos" */}
             <Link 
               className={`apropos ${location.pathname === '/a-propos' ? 'active' : ''}`} 
-              to="/a-propos"
+              to="/a-propos" 
+              aria-current={location.pathname === '/a-propos' ? 'page' : undefined}
             >
               A Propos
             </Link>
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
   );
 }
 

@@ -1,4 +1,7 @@
 .apropos-page {
+    .h1{
+        color: white;
+    }
     .fond2 {
         border-radius: 25px;
         mix-blend-mode: darken;
@@ -56,6 +59,7 @@
         font-family: 'Montserrat', sans-serif;
         font-size: 24px;
         font-weight: 700;
+        background-color: rgba(0, 0, 0, 0.021);
     }
 
     .accordion-icon {
@@ -109,5 +113,17 @@
     .Accordiongroup {
         padding-top: 4vh;
         padding-bottom: 3.3vh;
+    }
+    @media only screen and (max-width: 480px) {
+
+        .fond2{
+            height: 13vh;
+            width: 90vw;
+            border-radius: 10px;
+        }
+        .accordion {
+            width: 80vw;
+        }
+           
     }
 }
