@@ -42,8 +42,11 @@ L'application sera disponible à l'adresse http://localhost:3000.
 
 Fonctionnalités
 Affichage des logements : Les utilisateurs peuvent consulter les logements disponibles avec des détails tels que le titre, les notes, et les équipements.
+
 Système de navigation : Une navigation fluide entre les pages, avec gestion des erreurs 404.
+
 Accessibilité : Utilisation des attributs ARIA et des bonnes pratiques pour rendre l'application accessible aux utilisateurs de technologies d'assistance.
+
 Responsive Design : L'application est adaptée à différents formats d'écrans (mobile, tablette, bureau).
 
 Auteurs
