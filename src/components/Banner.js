@@ -9,12 +9,16 @@ function Banner() {
   return (
     <header className="banner" role="banner">
       <Link to="/home" aria-label="Retour à l'accueil">
-        <img className="logo" src={logo} alt="Logo Kosa" />
+        <img 
+          className="logo" 
+          src={logo} 
+          alt="Logo Kosa" 
+          loading="lazy"  // Lazy load du logo pour améliorer les performances
+        />
       </Link>
       <nav aria-label="Navigation principale">
         <ul>
           <li>
-            {/* Applique la classe active uniquement si la route est "/home" */}
             <Link 
               className={`accueil ${location.pathname === '/home' ? 'active' : ''}`} 
               to="/home" 
@@ -24,7 +28,6 @@ function Banner() {
             </Link>
           </li>
           <li>
-            {/* Applique la classe active uniquement si la route est "/a-propos" */}
             <Link 
               className={`apropos ${location.pathname === '/a-propos' ? 'active' : ''}`} 
               to="/a-propos" 
@@ -39,4 +42,4 @@ function Banner() {
   );
 }
 
-export default Banner;
+export default React.memo(Banner); 

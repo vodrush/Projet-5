@@ -15,7 +15,7 @@ function Apropos() {
     setOpenAccordions(newOpenAccordions);
   };
 
-  // Données des accordéons (peuvent être externalisées)
+  // Données des accordéons 
   const accordionsData = [
     { title: "Fiabilité", content: "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes." },
     { title: "Respect", content: "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme." },
@@ -26,7 +26,7 @@ function Apropos() {
   return (
     <div className="apropos-page">
       <div className="bod2">
-        <img className="fond2" src={Fond2} alt="Fond illustrant la page À Propos" />
+        <img className="fond2" src={Fond2} alt="Fond illustrant la page À Propos" loading='lazy'/>
       </div>
 
       <div className="Accordiongroup">

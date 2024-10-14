@@ -16,7 +16,11 @@ function Gallery() {
         {logements.map((logement) => (
           <div className="card" key={logement.id} role="article" aria-labelledby={`logement-title-${logement.id}`}>
             <Link to={`/logement/${logement.id}`} aria-label={`Voir les détails du logement ${logement.title}`}>
-              <img src={logement.cover} alt={`Image de couverture du logement ${logement.title}`} />
+              <img 
+                src={logement.cover} 
+                alt={`Image de couverture du logement ${logement.title}`} 
+                loading="lazy" // Lazy load pour optimiser le chargement des images
+              />
             </Link>
             <h3 className="titre-logement" id={`logement-title-${logement.id}`}>
               {logement.title}
@@ -28,4 +32,4 @@ function Gallery() {
   );
 }
 
-export default Gallery;
+export default React.memo(Gallery); // Utilisation de React.memo pour éviter les rerendus inutiles

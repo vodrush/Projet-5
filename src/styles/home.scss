@@ -1,109 +1,110 @@
 .home-page {
     .fond {
-        border-radius: 25px;
-        mix-blend-mode: darken;
+        position: relative;
         width: 80vw;
         height: 10vw;
-        object-fit: cover;
+        background-color: black;
+        background-image: url('../assets/fond1.png');
+        background-size: cover;
+        background-position: center;
+        border-radius: 25px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
     .overlay {
         position: absolute;
-        bottom: 61vh;
-        width: 80vw;
-        height: 10vw;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
         border-radius: 25px;
         z-index: 1;
         box-shadow: 0px 4px 4px 0px #00000040;
     }
-    .bod {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-    }
-    .desktop-text, .p1mobile-text, .p2mobile-text {
-        position: absolute;
-        z-index: 2; 
-        transform: translate(-50%, -50%);
+
+    .desktop-text,
+    .p1mobile-text,
+    .p2mobile-text {
+        z-index: 2;
         color: white;
-        background-color: rgba(0, 0, 0, 0.021);
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         font-family: 'Montserrat', sans-serif;
+        white-space: nowrap;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 33%;
+        left: 50%;
     }
+
     .desktop-text {
-        top: 25vh;
         font-size: 48px;
         font-weight: 700;
     }
-    .accueil {
+
+    .accueil,
+    .apropos,
+    .href {
         text-decoration: none;
         color: black;
     }
-    .apropos {
-        text-decoration: none !important;
-    }
+
     .t {
         display: flex;
         justify-content: center;
-        align-content: center;
         align-items: center;
         flex-direction: column;
     }
-    .href {
-        text-decoration: none;
-    }
-    .desktop-text {
-        display: block;
-    }
+
     .mobile-text {
         display: none;
     }
+
     /* Smartphones (portrait and landscape) */
-@media only screen and (max-width: 480px) {
-  
-    .fond{
-        height: 30vw;
-        width: 90vw;
-        border-radius: 10px;
+    @media only screen and (max-width: 480px) {
+
+        .fond {
+            height: 30vw;
+            width: 90vw;
+            border-radius: 10px;
+        }
+
+        .overlay {
+            top: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .desktop-text {
+            display: none;
+        }
+
+        .mobile-text {
+            display: block;
+        }
+
+        .p1mobile-text {
+            top: 3.5vh;
+            left: 21vw;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .p2mobile-text {
+            top: 8.5vh;
+            left: 33vw;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .fondgallery {
+            margin-top: 0vh;
+            background: white;
+            box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+        }
     }
-    .overlay{
-        position: absolute;
-        top: 10.8vh;
-        height: 30vw;
-        width: 90vw;
-        border-radius: 10px;
-    }
-    .desktop-text {
-        display: none;
-    }
-    .mobile-text {
-        display: block;
-    }
-    .mobile-text {
-        display: block;
-    }
-    .p1mobile-text{
-        top: 13vh;
-        left: 26vw;
-        font-size: 24px;
-        font-weight: 700;
-    }
-    .p2mobile-text{
-        top: 19vh;
-        left: 36vw;
-        font-size: 24px;
-        font-weight: 700;
-    }
-    .fondgallery {
-        margin-top: 0vh;
-        background: white;
-        box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
-    }
-  
-      
-      
-  }
-  
-  
 }

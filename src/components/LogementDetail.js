@@ -1,15 +1,29 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import logementsData from '../assets/logements.json';
 import '../styles/LogementDetail.scss';
 
 function LogementDetail() {
   const { id } = useParams();
-  const logement = logementsData.find((logement) => logement.id === id);
-
+  const navigate = useNavigate();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [openAccordions, setOpenAccordions] = useState([false, false]);
 
+  // Vérifie si le logement existe
+  const logement = logementsData.find((logement) => logement.id === id);
+
+  useEffect(() => {
+    if (!logement) {
+      // Redirige vers la page 404 si le logement n'existe pas
+      navigate('/E404');
+    }
+  }, [logement, navigate]);
+
+  if (!logement) {
+    return null;
+  }
+
+  // Logique des images du carrousel
   const handleNextImage = () => {
     setCurrentImageIndex(
       (prevIndex) => (prevIndex + 1) % logement.pictures.length
