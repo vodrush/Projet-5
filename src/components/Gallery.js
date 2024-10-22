@@ -7,7 +7,7 @@ function Gallery() {
   const [logements, setLogements] = useState([]);
 
   useEffect(() => {
-    setLogements(logementsData.slice(0, 6)); 
+    setLogements(logementsData); 
   }, []);
 
   return (
@@ -21,10 +21,11 @@ function Gallery() {
                 alt={`Image de couverture du logement ${logement.title}`} 
                 loading="lazy" // Lazy load pour optimiser le chargement des images
               />
+              <div className="card_overlay"></div>
+              <h3 className="titre-logement" id={`logement-title-${logement.id}`}>
+                {logement.title}
+              </h3>
             </Link>
-            <h3 className="titre-logement" id={`logement-title-${logement.id}`}>
-              {logement.title}
-            </h3>
           </div>
         ))}
       </div>

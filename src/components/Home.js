@@ -1,6 +1,4 @@
 import React from 'react';
-import Banner from './Banner';
-import Footer from './Footer';
 import Gallery from './Gallery';
 import '../styles/home.scss';
 

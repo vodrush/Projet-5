@@ -1,6 +1,4 @@
 import React from 'react';
-import Banner from './Banner'; 
-import Footer from './Footer';
 import '../styles/e404.scss';
 
 function E404() {
