@@ -15,7 +15,6 @@ function Home() {
               <h1 className="p2mobile-text" role="heading" aria-level="1">partout et ailleurs</h1>
             </div>
           </div>
-
         <Gallery aria-label="Galerie d'images des logements disponibles" />
       </div>
     </div>

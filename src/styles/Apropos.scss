@@ -114,6 +114,42 @@
         padding-top: 4vh;
         padding-bottom: 3.3vh;
     }
+    @media only screen and (max-width: 1440px) {
+
+        .fond2{
+            height: 13vh;
+            width: 90vw;
+            border-radius: 10px;
+        }
+        .accordion {
+            width: 80vw;
+        }
+           
+    }
+    @media only screen and (max-width: 1024px) {
+
+        .fond2{
+            height: 13vh;
+            width: 90vw;
+            border-radius: 10px;
+        }
+        .accordion {
+            width: 80vw;
+        }
+           
+    }
+    @media only screen and (max-width: 768px) {
+
+        .fond2{
+            height: 13vh;
+            width: 90vw;
+            border-radius: 10px;
+        }
+        .accordion {
+            width: 80vw;
+        }
+           
+    }
     @media only screen and (max-width: 480px) {
 
         .fond2{
